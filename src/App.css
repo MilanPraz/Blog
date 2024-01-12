@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#milan {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+#trending {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+#rest {
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+#rest-carousel {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
