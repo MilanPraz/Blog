@@ -31,7 +31,7 @@ function Home() {
             <CarouselCard />
           </Slider>
         </section>
-        <section className=" py-12 grid grid-cols-3 gap-x-8 gap-y-12">
+        <section className=" py-12 grid grid-cols-3  gap-x-8 gap-y-12">
           <Card />
           <Card />
           <Card />

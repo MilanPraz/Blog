@@ -11,7 +11,7 @@ const navbarData = [
   },
   {
     path: "/login",
-    title: "Login",
+    title: "Let's Get Started",
   },
 ];
 
