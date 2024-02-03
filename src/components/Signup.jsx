@@ -48,10 +48,60 @@ export default function Signup() {
   }
 
   return (
-    <div>
-      <div className=" flex items-center justify-center flex-col gap-2 bg-slate-200 p-8 rounded-md drop-shadow-sm text-slate-950">
-        <h2 className=" text-xl font-bold ">Register Now!</h2>
-        <p className=" text-sm font-light">Happy to join you!</p>
+    <div className=" relative mt-20  overflow-hidden">
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[294px] left-[279px]  rotate-2 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[200px] left-[29px]  rotate-2 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[54px] left-[540px]  rotate-12 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[30px] left-[900px]  rotate-90 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[200px] left-[900px]  rotate-90 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[24px] left-[229px]  rotate-2 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[144px] left-[600px]  rotate-2 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[85px] h-[135px] absolute top-[30px] left-[700px]  rotate-2 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[200px] h-[405px] absolute top-[30px] left-[70px]  rotate-45 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[200px] h-[405px] absolute top-[80px] left-[700px]  -rotate-45 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+      <div
+        id=""
+        className=" w-[200px] h-[405px] absolute -top-[50px] left-[450px]  rotate-12 opacity-20 bg-slate-50 rounded-lg backdrop-blur-md border-[1px] border-slate-200 box-border"
+      ></div>
+
+      <div
+        id="glassEffect"
+        className=" md:w-[400px] mx-auto flex items-center justify-center flex-col gap-2  p-8 rounded-md drop-shadow-sm text-slate-950"
+      >
+        <h2 className="text-2xl text-center font-bold text-slate-100 ">
+          Register Now!
+        </h2>
+        <p className="  text-sm font-light">Happy to join you!</p>
 
         <Formik
           validationSchema={LoginSchema}
@@ -64,7 +114,7 @@ export default function Signup() {
                 type="text"
                 placeholder="username"
                 name="username"
-                className=" bg-slate-200  outline-none border-purple-600 border-2 px-2 py-1 rounded-md text-slate-950"
+                className=" bg-slate-200  outline-none  px-4 py-3 rounded-md text-slate-950"
               />
               <p className=" text-xs text-pink-800">
                 <ErrorMessage
@@ -78,7 +128,7 @@ export default function Signup() {
                 type="text"
                 placeholder="email"
                 name="email"
-                className=" bg-slate-200  outline-none border-purple-600 border-2 px-2 py-1 rounded-md text-slate-950"
+                className=" bg-slate-200  outline-none  px-4 py-3 rounded-md text-slate-950"
               />
               <p className=" text-xs text-pink-800">
                 <ErrorMessage
@@ -92,7 +142,7 @@ export default function Signup() {
                 type="text"
                 placeholder="password"
                 name="password"
-                className=" bg-slate-200  outline-none border-purple-600 border-2 px-2 py-1 rounded-md text-slate-950"
+                className=" bg-slate-200  outline-none  px-4 py-3 rounded-md text-slate-950"
               />
               <p className=" text-xs text-pink-800">
                 <ErrorMessage
@@ -105,15 +155,15 @@ export default function Signup() {
             {/* <input placeholder='Username here'  className=' bg-slate-200  outline-none border-purple-600 border-2 px-2 py-1 rounded-md text-slate-950' /> */}
             <button
               type="submit"
-              className=" w-full bg-purple-700 rounded-md px-2 py-1"
+              className=" bg-myBlue text-slate-200 w-full  rounded-md px-2 py-2 cursor-pointer"
             >
               Register
             </button>
 
-            <p className=" text-xs font-semibold">
-              Already have an Account?{" "}
-              <Link to={"/"} className=" text-red-700">
-                Login here
+            <p className=" text-lg mt-4 font-semibold text-slate-200">
+              Have an account?
+              <Link to={"/login"} className=" text-myBlue px-1">
+                Login Here
               </Link>
             </p>
           </Form>

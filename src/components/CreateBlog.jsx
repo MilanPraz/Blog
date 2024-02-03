@@ -8,6 +8,7 @@ import "react-quill/dist/quill.snow.css";
 import { useCreateBlogMutation } from "../features/blogApi";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { baseUrl } from "../features/constant";
 
 function CreateBlog() {
   const [image, setImage] = useState();
@@ -76,15 +77,15 @@ function CreateBlog() {
           onSubmit={handleSubmit}
         >
           <Form className=" flex flex-col">
-            <div id="1st group" className=" flex gap-4 items-center ">
+            <div id="1st group" className=" flex gap-4 items-center h-32 ">
               <div className=" w-1/2 flex flex-col justify-between ">
                 <label
                   htmlFor="name"
-                  className=" text-xl font-semibold leading-8 text-myBlue"
+                  className=" text-xl font-semibold leading-10 text-myBlue"
                 >
                   Title
                 </label>
-                <div className="mt-1">
+                <div className="">
                   <Field
                     name="title"
                     type="text"
@@ -98,7 +99,7 @@ function CreateBlog() {
                   />
                 </p>{" "}
               </div>
-              <div className="w-1/2 flex flex-col justify-between">
+              <div className="w-1/2 flex flex-col justify-between h-32 items-start">
                 <label
                   htmlFor="WaterSupply"
                   className=" text-xl font-semibold leading-10 text-myBlue"
@@ -135,6 +136,7 @@ function CreateBlog() {
                 type="file"
                 id="myinput"
                 accept="image/*"
+                required
                 onChange={(e) => imageUpload(e)}
               />
               {image && (
@@ -151,6 +153,9 @@ function CreateBlog() {
               >
                 Add Image
               </button>
+              <small className=" leading-8 text-red-700">
+                *You must provide a image
+              </small>
             </div>
             <div>
               <div className="flex items-center justify-between">

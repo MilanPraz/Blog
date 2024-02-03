@@ -4,7 +4,10 @@ function Card() {
   return (
     <div>
       <div className="   flex flex-col justify-between items-center">
-        <div className=" relative right-10 z-10" id="card image">
+        <div
+          className=" self-center md:relative  right-10 z-10"
+          id="card image"
+        >
           <img
             className=" w-[400px] h-[257px] rounded-lg drop-shadow-sm object-cover"
             src="/plant.jpg"
@@ -12,7 +15,7 @@ function Card() {
         </div>
         <div
           id="rest"
-          className="relative -top-10 -left-5 z-20 overflow-hidden py-[40px] pl-[50px] pr-[35px] bg-darkBg flex items-start flex-col gap-4"
+          className="relative -top-10 -left-5 z-20 overflow-hidden w-[350px] py-[20px] pl-[50px] pr-[35px] bg-darkBg flex items-start flex-col gap-4"
         >
           <div>
             <div

@@ -16,3 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.ql-container.ql-snow {
+  border: none;
+}
