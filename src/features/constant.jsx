@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:8080";
+export const baseUrl = "https://blog-backend-zm4k.onrender.com";
