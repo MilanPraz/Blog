@@ -1,8 +1,8 @@
-#root {
+/* #root {
   max-width: 1280px;
-  margin: 0 auto;
-}
-
+  margin: 0;
+  /* padding: 0rem 2rem; */
+/* } */
 #milan {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -17,4 +17,126 @@
 }
 #rest-carousel {
   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+input[type="file"] {
+  display: none;
+}
+.getstartedBtn {
+  position: relative;
+  z-index: 1;
+  transition: 0.4s all ease-in-out;
+  overflow: hidden;
+}
+.getstartedBtn::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #05386b;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.getstartedBtn:hover::before {
+  transform: translateX(0);
+}
+
+.change-btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.change-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #05386b;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(105%);
+  transition: all 0.4s ease-in-out;
+}
+.change-btn:hover::before {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0);
+}
+
+.trending_slide {
+  position: relative;
+  z-index: 1;
+}
+.trending_slide::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #05386b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: 0.4s all ease-in-out;
+  z-index: -1;
+}
+.trending_slide:hover::before {
+  transform: translateY(0%);
+}
+
+.trending_slide.hoverit::before {
+  transform: translateY(0%);
+}
+
+.rc-pagination {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  gap: 1rem;
+  color: #05386b;
+  align-items: center;
+}
+.rc-pagination li {
+  cursor: pointer;
+  border: 2px solid #05386b;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.rc-pagination-options {
+  display: none;
+}
+.rc-pagination-item-active {
+  color: antiquewhite;
+  background-color: #05386b;
+}
+.rc-pagination li:hover {
+  color: antiquewhite;
+  background-color: #05386b;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+}
+
+#glassEffect {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
 }
